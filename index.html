@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdi Topiwala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- Skip navigation — first focusable element, visible on focus -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand" aria-label="Mahdi Topiwala">MT</span>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="reads.html" class="nav-link">Things to Read</a></li>
+      </ul>
+      <button class="kbd-help-btn" aria-label="Open keyboard shortcuts help" aria-haspopup="dialog">&#63;</button>
+    </div>
+  </nav>
+
+  <!-- Keyboard help modal -->
+  <div id="kbd-modal" class="kbd-modal" role="dialog" aria-modal="true" aria-labelledby="kbd-modal-title" hidden>
+    <div class="kbd-modal-backdrop"></div>
+    <div class="kbd-modal-content">
+      <div class="kbd-modal-header">
+        <h2 id="kbd-modal-title">Keyboard Access Guide</h2>
+        <button class="kbd-modal-close" aria-label="Close keyboard help">&#10005;</button>
+      </div>
+      <div class="kbd-modal-body">
+        <p class="kbd-intro">This site is fully navigable by keyboard. No mouse required.</p>
+
+        <table class="kbd-table" aria-label="Keyboard shortcuts">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><kbd>Tab</kbd></td>
+              <td>Move focus to the next interactive element</td>
+            </tr>
+            <tr>
+              <td><kbd>Shift</kbd> + <kbd>Tab</kbd></td>
+              <td>Move focus to the previous interactive element</td>
+            </tr>
+            <tr>
+              <td><kbd>Enter</kbd> / <kbd>Space</kbd></td>
+              <td>Activate a focused link or button</td>
+            </tr>
+            <tr>
+              <td><kbd>&larr;</kbd> <kbd>&rarr;</kbd> Arrow keys</td>
+              <td>Move between navigation links when nav is focused</td>
+            </tr>
+            <tr>
+              <td><kbd>Escape</kbd></td>
+              <td>Close this dialog</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="kbd-principles">
+          <h3>What we prioritise</h3>
+          <p>
+            We especially focus on <strong>visible focus indicators</strong> and <strong>discoverability</strong>.
+            A high-contrast focus ring always shows exactly where you are on the page, so you never have to
+            guess. A "Skip to main content" link at the very top lets you bypass the navigation bar instantly —
+            press <kbd>Tab</kbd> once and then <kbd>Enter</kbd> to jump past the nav.
+          </p>
+          <p>
+            On the <a href="reads.html">Things to Read</a> page, all links are reachable by <kbd>Tab</kbd>
+            and open with <kbd>Enter</kbd>. Arrow keys let you move between navigation items without
+            cycling through the full tab order.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <div class="page">
+
+      <!-- Left: text -->
+      <div class="left">
+        <div class="left-inner">
+          <p class="eyebrow reveal">UW Bothell &middot; Applied Computing &middot; Seattle</p>
+          <h1 class="reveal">Mahdi<br />Topiwala</h1>
+          <p class="tagline reveal">Builder. Thinker. Cricket fan.</p>
+          <div class="bio reveal">
+            <p>Final-year Applied Computing student at UW Bothell, graduating June 2026. Passionate about project management, data analytics, and cricket.</p>
+            <p>I volunteer at my local community, <strong>Zainabeyyoon360</strong> — a youth-run program management initiative.</p>
+          </div>
+          <div class="interests reveal">
+            <p class="interests-label">Interests</p>
+            <ul>
+              <li>Cricket</li>
+              <li>Product management &amp; tech strategy</li>
+              <li>Data analytics &amp; visualisation</li>
+              <li>Community building &amp; event organising</li>
+              <li>Travel</li>
+            </ul>
+          </div>
+          <p class="footer-line reveal">&copy; 2026 Mahdi Topiwala</p>
+        </div>
+      </div>
+
+      <!-- Right: image (decorative) -->
+      <div class="right reveal" aria-hidden="true">
+        <img src="image/IMG_7728.JPG" alt="" />
+        <span class="photo-caption">Seattle, WA</span>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Things to Read — Mahdi Topiwala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- Skip navigation — first focusable element, visible on focus -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand" aria-label="Mahdi Topiwala">MT</span>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="reads.html" class="nav-link" aria-current="page">Things to Read</a></li>
+      </ul>
+      <button class="kbd-help-btn" aria-label="Open keyboard shortcuts help" aria-haspopup="dialog">&#63;</button>
+    </div>
+  </nav>
+
+  <!-- Keyboard help modal -->
+  <div id="kbd-modal" class="kbd-modal" role="dialog" aria-modal="true" aria-labelledby="kbd-modal-title" hidden>
+    <div class="kbd-modal-backdrop"></div>
+    <div class="kbd-modal-content">
+      <div class="kbd-modal-header">
+        <h2 id="kbd-modal-title">Keyboard Access Guide</h2>
+        <button class="kbd-modal-close" aria-label="Close keyboard help">&#10005;</button>
+      </div>
+      <div class="kbd-modal-body">
+        <p class="kbd-intro">This site is fully navigable by keyboard. No mouse required.</p>
+
+        <table class="kbd-table" aria-label="Keyboard shortcuts">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><kbd>Tab</kbd></td>
+              <td>Move focus to the next interactive element</td>
+            </tr>
+            <tr>
+              <td><kbd>Shift</kbd> + <kbd>Tab</kbd></td>
+              <td>Move focus to the previous interactive element</td>
+            </tr>
+            <tr>
+              <td><kbd>Enter</kbd> / <kbd>Space</kbd></td>
+              <td>Activate a focused link or button</td>
+            </tr>
+            <tr>
+              <td><kbd>&larr;</kbd> <kbd>&rarr;</kbd> Arrow keys</td>
+              <td>Move between navigation links when nav is focused</td>
+            </tr>
+            <tr>
+              <td><kbd>Escape</kbd></td>
+              <td>Close this dialog</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="kbd-principles">
+          <h3>What we prioritise</h3>
+          <p>
+            We especially focus on <strong>visible focus indicators</strong> and <strong>discoverability</strong>.
+            A high-contrast focus ring always shows exactly where you are on the page, so you never have to
+            guess. A "Skip to main content" link at the very top lets you bypass the navigation bar instantly —
+            press <kbd>Tab</kbd> once and then <kbd>Enter</kbd> to jump past the nav.
+          </p>
+          <p>
+            On this page, all links are reachable by <kbd>Tab</kbd> and open with <kbd>Enter</kbd>.
+            Arrow keys let you move between navigation items without cycling through the full tab order.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <div class="reads-page">
+
+      <header class="reads-header reveal">
+        <p class="eyebrow">Curated links</p>
+        <h1>Things to Read</h1>
+        <p class="reads-intro">A collection of sites and articles I find interesting — spanning cricket, product strategy, data, and more.</p>
+      </header>
+
+      <div class="reads-content">
+
+        <!-- Category 1 -->
+        <section class="reads-section reveal" aria-labelledby="cat-cricket">
+          <h2 id="cat-cricket" class="reads-cat">Cricket &amp; Sport</h2>
+          <ul class="reads-list" role="list">
+            <li>
+              <a href="https://www.espncricinfo.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">ESPNcricinfo</span>
+                <span class="reads-link-desc">The definitive source for cricket news, statistics, and live scores. I check this daily.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.thecricketmonthly.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">The Cricket Monthly</span>
+                <span class="reads-link-desc">Long-form cricket journalism — in-depth profiles, analysis, and essays on the game.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.theringer.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">The Ringer</span>
+                <span class="reads-link-desc">Smart sports and pop culture writing that goes beyond the box score.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Category 2 -->
+        <section class="reads-section reveal" aria-labelledby="cat-product">
+          <h2 id="cat-product" class="reads-cat">Product &amp; Strategy</h2>
+          <ul class="reads-list" role="list">
+            <li>
+              <a href="https://www.mindtheproduct.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Mind the Product</span>
+                <span class="reads-link-desc">Resources, articles, and community for product managers at every stage.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://stratechery.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Stratechery</span>
+                <span class="reads-link-desc">Ben Thompson's sharp analysis on tech business strategy and industry dynamics.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://hbr.org" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Harvard Business Review</span>
+                <span class="reads-link-desc">Research-backed articles on management, leadership, and organisational behaviour.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.producthunt.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Product Hunt</span>
+                <span class="reads-link-desc">Daily discoveries of new products and tools across tech — great for staying current.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Category 3 -->
+        <section class="reads-section reveal" aria-labelledby="cat-data">
+          <h2 id="cat-data" class="reads-cat">Data &amp; Analytics</h2>
+          <ul class="reads-list" role="list">
+            <li>
+              <a href="https://towardsdatascience.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Towards Data Science</span>
+                <span class="reads-link-desc">Practical tutorials and perspectives on data science, ML, and analytics.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://ourworldindata.org" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Our World in Data</span>
+                <span class="reads-link-desc">Research and data visualisations on global trends — poverty, health, climate, and more.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://fivethirtyeight.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">FiveThirtyEight</span>
+                <span class="reads-link-desc">Data-driven journalism on sports, politics, and culture. Great blend of stats and storytelling.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Category 4 -->
+        <section class="reads-section reveal" aria-labelledby="cat-travel">
+          <h2 id="cat-travel" class="reads-cat">Travel &amp; Culture</h2>
+          <ul class="reads-list" role="list">
+            <li>
+              <a href="https://www.lonelyplanet.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Lonely Planet</span>
+                <span class="reads-link-desc">Destination guides, travel tips, and itinerary inspiration for anywhere in the world.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.atlasobscura.com" class="reads-link" target="_blank" rel="noopener noreferrer">
+                <span class="reads-link-title">Atlas Obscura</span>
+                <span class="reads-link-desc">The world's hidden wonders — unusual places, forgotten history, and curious experiences.</span>
+                <span class="reads-link-external" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </div><!-- /reads-content -->
+
+      <footer class="reads-footer reveal">
+        <p>&copy; 2026 Mahdi Topiwala</p>
+      </footer>
+
+    </div><!-- /reads-page -->
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

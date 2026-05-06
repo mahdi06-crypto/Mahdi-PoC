@@ -114,6 +114,12 @@ html, body {
   letter-spacing: 0.05em;
   color: var(--blue);
   flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.nav-brand:hover {
+  opacity: 0.75;
 }
 
 .nav-links {
